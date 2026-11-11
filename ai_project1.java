@@ -1,4 +1,3 @@
-
 import java.util.*;
 
 public class ai_project1 {
@@ -69,6 +68,8 @@ class vacuum_cleaner {
         int[] percept = new int[3];
         percept[0] = row;
         percept[1] = col;
+        // Share the starting cell's condition with the agent, just like later cells.
+        percept[2] = environment[row][col];
 
         while (true) {
             System.out.println("---------------------------------");
